@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ body{
+	margin:0;
+	background-color: #C6C6C6;
+}
+
+#outputLayer,#loadingDiv{
+	background-color: white;
+	border: solid 5px #666666;
+}
+
+#scoreDivOuter {
+	margin: -10px 0 10px 0;
+}
+
+#scoreDivInner {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#loadingDiv {
+	width: 310px;
+	height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#loadingDiv img{
+	margin-top: 60px;
+}
+
+#vidPuzzleNavbar{
+	min-width: 710px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}

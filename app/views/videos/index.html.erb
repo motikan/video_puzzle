@@ -1,0 +1,16 @@
+<div id="fileName" class="hide">videos/hogehoge.mp4</div>
+<div id="vidDiv" class="hide">
+<%= video_tag("/videos/hogehoge.mp4", {id: :'sourceVid', width: :'500px', autoplay: :true, loop: :true}) %>
+</div>
+<div id="mainDiv" class="center">
+    <canvas id="outputLayer" class="hide"></canvas>
+	<div id="loadingDiv">
+		<img src="images/ajax-loader.gif" >
+	</div>
+</div>
+<%= form_tag('/create', {multipart: :true}) do %>
+	<%= label_tag 'test' %><br>
+	<%= file_field_tag 'hoge' , :accept => 'video/*' %>
+	<%= submit_tag('送信') %>
+<% end %>
+
