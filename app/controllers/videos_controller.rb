@@ -5,7 +5,7 @@ class VideosController < ApplicationController
 		File.open("public/videos/hogehoge.mp4", 'wb') { |f|
 			 f.write(file.read) 
 		}
-		render 'index.html.erb'
+		render 'create.html.erb'
 	end
 
 	def index
